@@ -1,4 +1,4 @@
-const Pet = ({name, animal, bread}) => {
+const Pet = ({ name, animal, bread }) => {
   return React.createElement("div", {}, [
     React.createElement("h1", {}, name),
     React.createElement("h2", {}, animal),
@@ -9,11 +9,7 @@ const Pet = ({name, animal, bread}) => {
 const App = () => {
   return React.createElement("div", {}, [
     React.createElement("h1", {}, "Adopt Me!"),
-    React.createElement(Pet, {
-      name: "Neko",
-      animal: "Cat",
-      bread: "black",
-    }),
+    React.createElement(Pet, { name: "Neko", animal: "Cat", bread: "black" }),
     React.createElement(Pet, {
       name: "Luna",
       animal: "Dog",
